@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: tan;
+}
+#sign-up{
+    display: flex;
+}
+#sign-in{
+    display: none;
+}
+.container{
+    width: 100%;
+    height: 600px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: .9;
+}
+.close__btn{
+position: absolute;
+width: 20px;
+border: 1px solid rgb(136, 19, 165);
+top: 15px;
+right: 5px;
+transform: rotate(-45deg);
+cursor: pointer;
+}
+.close__btn:hover{
+    opacity: .7;
+}
+.close__btn::before{
+content: "";
+position: absolute;
+width: 20px;
+border: 1px solid rgb(136, 19, 165);
+top: -1px;
+left: 0px;
+transform: rotate(90deg);
+}
+.left__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+    background: -webkit-linear-gradient(#f1f1f1, #bd1e95);
+}
+.left__content img{
+    object-fit: cover;
+}
+.right__content{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(#f1f1f1, #c31212);
+}
+.headline{
+    word-break: break-word;
+    padding: 2.5em 1em 1em 1em;
+    text-align: center;
+    text-transform: capitalize;
+    text-indent: 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.3em;
+    color: darkslategray;
+}
+.input__group{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 2em;
+    padding: 0 3em;
+}
+.input__group label{
+    cursor: pointer;
+    color: rgb(248, 239, 222);
+}
+.input__group input{
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: .9em;
+    border-bottom: 1px solid #d2d6aa;
+    border-radius: .1em;
+    color: #f1f1f1;
+    caret-color: #f1f1f1;
+}
+.submit{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    margin: 3em auto 0px auto;
+}
+
+.submit input[type="submit"]{
+    width: 100%;
+    height: 100%;
+    border:none;
+    outline: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color:rgb(199, 194, 197) ;
+    color: rgb(165, 0, 110);
+}
+.submit input[type="submit"]:hover{
+    background-color:rgb(165, 0, 110) ;
+    color: #fafafa;
+}
+.have__an__account{
+    margin-top: 1em;
+    color: #fafafa;
+    font-size: .8em;
+    text-align: center;
+}
+.have__an__account a{
+    margin-left: .3em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.have__an__account a:hover{
+    color: #f1f1f1;
+    text-decoration: underline;
+}
